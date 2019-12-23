@@ -125,6 +125,10 @@ func (v *Value) castInt(isEnum bool) {
 		}
 	case time.Time:
 		v.intVal = v.ivalue.(time.Time).Unix()
+	case []uint8:
+		if b, ok := v.ivalue.([]byte); ok {
+			v.intVal, v.err = strconv.ParseInt(string(b), 10, 64)
+		}
 	}
 }
 
@@ -150,6 +154,10 @@ func (v *Value) castUint() {
 		}
 	case time.Time:
 		v.uintVal = uint64(v.ivalue.(time.Time).Unix())
+	case []uint8:
+		if b, ok := v.ivalue.([]byte); ok {
+			v.uintVal, v.err = strconv.ParseUint(string(b), 10, 64)
+		}
 	}
 }
 
@@ -175,6 +183,10 @@ func (v *Value) castFLoat() {
 		}
 	case time.Time:
 		v.floatVal = float64(v.ivalue.(time.Time).Unix())
+	case []uint8:
+		if b, ok := v.ivalue.([]byte); ok {
+			v.floatVal, v.err = strconv.ParseFloat(string(b), 64)
+		}
 	}
 }
 
@@ -196,6 +208,10 @@ func (v *Value) castString() {
 		}
 	case time.Time:
 		v.strVal = v.ivalue.(time.Time).String()
+	case []uint8:
+		if b, ok := v.ivalue.([]byte); ok {
+			v.strVal = string(b)
+		}
 	}
 }
 
@@ -229,6 +245,10 @@ func (v *Value) castBool() {
 		v.boolVal = v.rvalue.Bool()
 	case time.Time:
 		v.boolVal = true
+	case []uint8:
+		if b, ok := v.ivalue.([]byte); ok {
+			v.boolVal, v.err = strconv.ParseBool(string(b))
+		}
 	}
 }
 
