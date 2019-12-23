@@ -261,6 +261,9 @@ func (v *Value) castTimestamp() {
 			v.timeVal = reflect.ValueOf(ptypes.TimestampNow())
 			v.err = err
 		}
+	case nil:
+		var emptyTime *timestamp.Timestamp
+		v.timeVal = reflect.ValueOf(emptyTime)
 	default:
 		v.timeVal = reflect.ValueOf(ptypes.TimestampNow())
 		v.err = errors.New(fmt.Sprintf(
