@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gogo/protobuf/vanity/command"
-	"github.com/jackskj/protoc-gen-map/plugin"
+	"github.com/izumiya/protoc-gen-map/plugin"
 )
 
 func main() {
