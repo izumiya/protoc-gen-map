@@ -47,7 +47,7 @@ func (m *{{ .ServiceName }}MapServer) {{ .MethodName }}(ctx context.Context, r *
 		}
 	}
 	{{ if eq .QueryType "Exec" }}
-	_, err := m.DB.Exec(rawSql)
+	_, err := m.DB.ExecContext(ctx, rawSql)
 	if err != nil {
 		log.Printf("error executing query.\n {{ .RequestName }} request: %s \n,query: %s \n error: %s", r, rawSql, err)
 		return nil, status.Error(codes.InvalidArgument, "request generated malformed query")
@@ -61,7 +61,7 @@ func (m *{{ .ServiceName }}MapServer) {{ .MethodName }}(ctx context.Context, r *
 	resp :={{ .ResponseName }}{}
         return &resp, nil
 	{{ else if eq .QueryType "Query" }}
-	rows, err := m.DB.Query(rawSql)
+	rows, err := m.DB.QueryContext(ctx, rawSql)
 	if err != nil {
 		log.Printf("error executing query.\n {{ .RequestName }} request: %s \n,query: %s \n error: %s", r, rawSql, err)
 		return nil, status.Error(codes.InvalidArgument, "request generated malformed query")

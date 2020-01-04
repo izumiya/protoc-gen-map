@@ -2,7 +2,7 @@ package plugin
 
 import (
 	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
-	"github.com/jackskj/protoc-gen-map/templates"
+	"github.com/izumiya/protoc-gen-map/templates"
 	"log"
 	"os"
 	"text/template"

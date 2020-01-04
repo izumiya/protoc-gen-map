@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/Masterminds/sprig"
 	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
-	"github.com/jackskj/protoc-gen-map/templates"
+	"github.com/izumiya/protoc-gen-map/templates"
 	"io/ioutil"
 	"log"
 	"os"
