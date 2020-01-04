@@ -52,7 +52,7 @@ func (m *{{ .ServiceName }}MapServer) {{ .MethodName }}(r *{{ .RequestName }}, s
 			return status.Error(codes.Internal, err.Error())
 		}
 	}
-	rows, err := m.DB.Query(rawSql)
+	rows, err := m.DB.QueryContext(stream.Context(), rawSql)
 	if err != nil {
 		log.Printf("error executing query.\n {{ .RequestName }} request: %s \n,query: %s \n error: %s", r, rawSql, err)
 		return status.Error(codes.Internal, err.Error())
