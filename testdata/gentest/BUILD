@@ -15,7 +15,7 @@ proto_library(
 go_proto_library(
     name = "gentest_go_proto",
     compilers = ["@io_bazel_rules_go//proto:go_grpc"],
-    importpath = "github.com/jackskj/protoc-gen-map/testdata/gentest",
+    importpath = "github.com/izumiya/protoc-gen-map/testdata/gentest",
     proto = ":gentest_proto",
     visibility = ["//visibility:public"],
 )
@@ -29,7 +29,7 @@ go_library(
         "unary_type_test.pb.map.go",
     ],
     embed = [":gentest_go_proto"],
-    importpath = "github.com/jackskj/protoc-gen-map/testdata/gentest",
+    importpath = "github.com/izumiya/protoc-gen-map/testdata/gentest",
     visibility = ["//visibility:public"],
     deps = [
         "//mapper:go_default_library",

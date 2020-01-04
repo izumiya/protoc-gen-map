@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/Masterminds/sprig"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/jackskj/protoc-gen-map/templates"
+	"github.com/izumiya/protoc-gen-map/templates"
 	"testing"
 	"text/template"
 	"time"

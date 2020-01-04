@@ -2,7 +2,7 @@ package testdata
 
 import (
 	"errors"
-	ex "github.com/jackskj/protoc-gen-map/examples"
+	ex "github.com/izumiya/protoc-gen-map/examples"
 )
 
 var CallbackPool = map[string]int{}

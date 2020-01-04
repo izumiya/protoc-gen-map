@@ -125,7 +125,7 @@ func (p *SqlPlugin) getQueryType(method *descriptor.MethodDescriptorProto) (quer
 	if queryType == "Exec" && method.GetClientStreaming() {
 		p.Error(method.GetName() +
 			" does not expect response rows and is server streaming streaming.\n" +
-			"Please read important notes at https://github.com/jackskj/protoc-gen-map#important-notes",
+			"Please read important notes at https://github.com/izumiya/protoc-gen-map#important-notes",
 		)
 	}
 	return

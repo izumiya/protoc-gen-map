@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/golang/protobuf/ptypes/timestamp"
-	_ "github.com/jackskj/protoc-gen-map/examples"
+	_ "github.com/izumiya/protoc-gen-map/examples"
 	math "math"
 
 	//protoc-gen-map packages
@@ -15,9 +15,9 @@ import (
 	context "context"
 	sql "database/sql"
 	sprig "github.com/Masterminds/sprig"
-	examples "github.com/jackskj/protoc-gen-map/examples"
-	mapper "github.com/jackskj/protoc-gen-map/mapper"
-	mappertmpl "github.com/jackskj/protoc-gen-map/templates"
+	examples "github.com/izumiya/protoc-gen-map/examples"
+	mapper "github.com/izumiya/protoc-gen-map/mapper"
+	mappertmpl "github.com/izumiya/protoc-gen-map/templates"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
 	log "log"

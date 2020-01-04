@@ -5,21 +5,21 @@ load("@bazel_gazelle//:def.bzl", "gazelle")
 
 gazelle(
     name = "gazelle_update",
-    prefix = "github.com/jackskj/protoc-gen-map",
+    prefix = "github.com/izumiya/protoc-gen-map",
     command = "update",
     extra_args = [],
 )
 
 gazelle(
     name = "gazelle_resolve",
-    prefix = "github.com/jackskj/protoc-gen-map",
+    prefix = "github.com/izumiya/protoc-gen-map",
     extra_args = [],
 )
 
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "github.com/jackskj/protoc-gen-map",
+    importpath = "github.com/izumiya/protoc-gen-map",
     visibility = ["//visibility:private"],
     deps = [
         "//plugin:go_default_library",

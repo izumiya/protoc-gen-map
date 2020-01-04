@@ -12,7 +12,7 @@ import (
 	bytes "bytes"
 	context "context"
 	sql "database/sql"
-	mapper "github.com/jackskj/protoc-gen-map/mapper"
+	mapper "github.com/izumiya/protoc-gen-map/mapper"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
 	log "log"

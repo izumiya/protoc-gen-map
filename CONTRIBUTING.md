@@ -9,8 +9,8 @@ Please follow the code of conduct when interacting with the protoc-gen-map proje
 The recommended PR process is as follows.
 
 1. Please first discuss the change you wish to make via issue.
-2. Upgrade with `go get -u github.com/jackskj/protoc-gen-map`
-3. cd `$GOPATH/src/github.com/jackskj/protoc-gen-map`
+2. Upgrade with `go get -u github.com/izumiya/protoc-gen-map`
+3. cd `$GOPATH/src/github.com/izumiya/protoc-gen-map`
 4. Reflect your changes in example files as well as the README. 
 5. Update example and test .proto, .pb.go and .pg.map.go files when needed.
    You can use 'make gen' defined in the Makefile.

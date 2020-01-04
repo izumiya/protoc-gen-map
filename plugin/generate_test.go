@@ -2,10 +2,10 @@
 package plugin_test
 
 import (
-	"github.com/jackskj/protoc-gen-map/examples"
-	"github.com/jackskj/protoc-gen-map/testdata"
-	"github.com/jackskj/protoc-gen-map/testdata/gentest"
-	"github.com/jackskj/protoc-gen-map/testdata/initdb"
+	"github.com/izumiya/protoc-gen-map/examples"
+	"github.com/izumiya/protoc-gen-map/testdata"
+	"github.com/izumiya/protoc-gen-map/testdata/gentest"
+	"github.com/izumiya/protoc-gen-map/testdata/initdb"
 	"testing"
 )
 

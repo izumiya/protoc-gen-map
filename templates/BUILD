@@ -11,7 +11,7 @@ go_library(
         "templates.go",
         "unary_response.go",
     ],
-    importpath = "github.com/jackskj/protoc-gen-map/templates",
+    importpath = "github.com/izumiya/protoc-gen-map/templates",
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_golang_protobuf//ptypes:go_default_library_gen",

@@ -89,7 +89,7 @@ func (p *SqlPlugin) TestSQLTemplates(g *generator.Generator) {
 		}
 	} else {
 		p.Error(fmt.Sprint("protoc-gen-map: no rpc-sql template pairs found \n",
-			"head over to https://github.com/jackskj/protoc-gen-map#sqlproto-definition "+
+			"head over to https://github.com/izumiya/protoc-gen-map#sqlproto-definition "+
 				"for instructions on rpc-sql definition guide.",
 		))
 	}

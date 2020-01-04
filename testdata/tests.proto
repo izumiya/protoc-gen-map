@@ -5,7 +5,7 @@ package testdata;
 import "google/protobuf/timestamp.proto";
 import "examples/query.proto";
 
-option go_package = "github.com/jackskj/protoc-gen-map/testdata;testdata";
+option go_package = "github.com/izumiya/protoc-gen-map/testdata;testdata";
 
 service TestReflectService {
   rpc TypeCasting    ( EmptyRequest) returns ( TypeCastingResponse){}

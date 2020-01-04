@@ -4,7 +4,7 @@ package examples;
 
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/jackskj/protoc-gen-map/examples;examples";
+option go_package = "github.com/izumiya/protoc-gen-map/examples;examples";
 
 service BlogQueryService {
   rpc SelectBlog (BlogRequest) returns (BlogResponse) {}

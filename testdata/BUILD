@@ -9,7 +9,7 @@ go_library(
         "tests.pb.map.go",
     ],
     embed = [":tests_go_proto"],
-    importpath = "github.com/jackskj/protoc-gen-map/testdata",
+    importpath = "github.com/izumiya/protoc-gen-map/testdata",
     visibility = ["//visibility:public"],
     deps = [
         "//examples:go_default_library",
@@ -35,7 +35,7 @@ proto_library(
 go_proto_library(
     name = "tests_go_proto",
     compilers = ["@io_bazel_rules_go//proto:go_grpc"],
-    importpath = "github.com/jackskj/protoc-gen-map/testdata",
+    importpath = "github.com/izumiya/protoc-gen-map/testdata",
     proto = ":testdata_proto",
     visibility = ["//visibility:public"],
     deps = ["//examples:go_default_library"],

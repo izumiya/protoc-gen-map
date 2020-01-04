@@ -6,7 +6,7 @@ go_library(
         "mapper.go",
         "reflect.go",
     ],
-    importpath = "github.com/jackskj/protoc-gen-map/mapper",
+    importpath = "github.com/izumiya/protoc-gen-map/mapper",
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_golang_protobuf//ptypes:go_default_library_gen",

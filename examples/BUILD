@@ -8,7 +8,7 @@ go_library(
         "server.go",
     ],
     embed = [":examples_go_proto"],
-    importpath = "github.com/jackskj/protoc-gen-map/examples",
+    importpath = "github.com/izumiya/protoc-gen-map/examples",
     visibility = ["//visibility:public"],
     deps = [
         "//mapper:go_default_library",
@@ -32,7 +32,7 @@ proto_library(
 go_proto_library(
     name = "examples_go_proto",
     compilers = ["@io_bazel_rules_go//proto:go_grpc"],
-    importpath = "github.com/jackskj/protoc-gen-map/examples",
+    importpath = "github.com/izumiya/protoc-gen-map/examples",
     proto = ":examples_proto",
     visibility = ["//visibility:public"],
 )

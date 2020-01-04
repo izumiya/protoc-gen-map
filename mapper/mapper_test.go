@@ -16,9 +16,9 @@ import (
 
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
-	ex "github.com/jackskj/protoc-gen-map/examples"
-	td "github.com/jackskj/protoc-gen-map/testdata"
-	"github.com/jackskj/protoc-gen-map/testdata/initdb"
+	ex "github.com/izumiya/protoc-gen-map/examples"
+	td "github.com/izumiya/protoc-gen-map/testdata"
+	"github.com/izumiya/protoc-gen-map/testdata/initdb"
 	diff "github.com/yudai/gojsondiff"
 	"github.com/yudai/gojsondiff/formatter"
 	"google.golang.org/grpc"

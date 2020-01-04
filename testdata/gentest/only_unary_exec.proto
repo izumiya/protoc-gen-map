@@ -2,7 +2,7 @@ syntax="proto3";
 
 package gentest;
 
-option go_package = "github.com/jackskj/protoc-gen-map/testdata/gentest;gentest";
+option go_package = "github.com/izumiya/protoc-gen-map/testdata/gentest;gentest";
 
 service OnlyExecService {
   rpc Insert (OnlyExec) returns (OnlyExec){}

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
-	"github.com/jackskj/protoc-gen-map/testdata/initdb"
+	"github.com/izumiya/protoc-gen-map/testdata/initdb"
 	_ "github.com/lib/pq"
 )
 

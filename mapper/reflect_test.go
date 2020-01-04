@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	td "github.com/jackskj/protoc-gen-map/testdata"
+	td "github.com/izumiya/protoc-gen-map/testdata"
 )
 
 func iTestCasting(t *testing.T) {

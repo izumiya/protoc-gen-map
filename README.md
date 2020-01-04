@@ -157,15 +157,15 @@ Client requesting a detailed blog information will receive the DetailedBlogRespo
 
 ## Installation 
 ```
-go get -u github.com/jackskj/protoc-gen-map
+go get -u github.com/izumiya/protoc-gen-map
 ```
 ## Workflow
 protoc-sql-map is a code-generating proto plugin and a data mapping framework. This section explains the 3 steps to get started.
-For an example case, head over to [examples](https://github.com/jackskj/protoc-gen-map/tree/master/examples) 
+For an example case, head over to [examples](https://github.com/izumiya/protoc-gen-map/tree/master/examples) 
 ### 1. Define SQL and Proto
 Define your SQL statements with go's templating syntax in a file directory. protoc-gen-map will recursively read all sql files in the directory.
 Next, define the corresponding gRPC services and protobuf messages. 
-For instructions on defining SQL/proto head over to [SQL/Proto Definition](https://github.com/jackskj/protoc-gen-map#sqlproto-definition).
+For instructions on defining SQL/proto head over to [SQL/Proto Definition](https://github.com/izumiya/protoc-gen-map#sqlproto-definition).
 
 ### 2. Generate Code
 Once proto message and SQL templates are created, protoc-gen-map will generate ".pb.map.go" files containing service servers for each defined server in your proto. The name of the generated servers is your name of the server followed by "MapServer".

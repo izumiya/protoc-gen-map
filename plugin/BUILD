@@ -8,7 +8,7 @@ go_library(
         "plugin.go",
         "templates.go",
     ],
-    importpath = "github.com/jackskj/protoc-gen-map/plugin",
+    importpath = "github.com/izumiya/protoc-gen-map/plugin",
     visibility = ["//visibility:public"],
     deps = [
         "//templates:go_default_library",
