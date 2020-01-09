@@ -264,6 +264,20 @@ func (v *Value) castTimestamp() {
 	case nil:
 		var emptyTime *timestamp.Timestamp
 		v.timeVal = reflect.ValueOf(emptyTime)
+	case []uint8:
+		if b, ok := v.ivalue.([]byte); ok {
+			if timeVal, err := time.Parse("2006-01-02 15:04:05", string(b)); err == nil {
+				if sqlTime, err := ptypes.TimestampProto(timeVal); err == nil {
+					v.timeVal = reflect.ValueOf(sqlTime)
+				} else {
+					v.timeVal = reflect.ValueOf(ptypes.TimestampNow())
+					v.err = err
+				}
+			} else {
+				v.timeVal = reflect.ValueOf(ptypes.TimestampNow())
+				v.err = err
+			}
+		}
 	default:
 		v.timeVal = reflect.ValueOf(ptypes.TimestampNow())
 		v.err = errors.New(fmt.Sprintf(
