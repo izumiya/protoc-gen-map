@@ -1,4 +1,4 @@
-workspace(name = "jackskj_protoc_gen_map")
+workspace(name = "izumiya_protoc_gen_map")
 
 load("//bazel:http_dependencies.bzl", "http_depts")
 
